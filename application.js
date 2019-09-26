@@ -1,8 +1,3 @@
-function AddOnlyIfPositive(a, b) {
-  if (a < 0 || b < 0) return null;
-
-  const sum = a + b;
-  return sum;
-}
+const AddOnlyIfPositive = (a, b) => (a < 0 || b < 0 ? null : a + b);
 
 module.exports = { AddOnlyIfPositive };
